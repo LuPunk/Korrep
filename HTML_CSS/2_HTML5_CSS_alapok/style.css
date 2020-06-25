@@ -1,0 +1,74 @@
+img {
+    border: 5px;
+    border-style: dashed;
+    border-color: yellowgreen;
+    /*Lekerekített*/
+    border-radius: 45px;
+
+    /*Összesített
+    border: 3px solid red;*/
+
+    /*padding: 5px;*/
+    /*
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;*/
+
+    /*Alsó = Felső padding, Bal = Jobb padding
+    padding: 10px 5px;*/
+
+    /*Összesíve: felső-jobb-alsó-bal*/
+    padding: 10px;
+    
+}
+
+p {
+    /*Szöveg elrendezés: bal, közép, jobb, justify=sorkizárt*/
+    text-align: justify;
+    text-align: center;
+    width: 900px;
+}
+
+.cimke {
+    /*Pozicionálás
+    position: absolute;
+    top: 220px;
+    left: 300px;*/
+
+    /*position: relative;
+    top: 20px;*/
+
+    /*position: fixed;
+    top: 300px;
+    left: 400px;*/
+}
+
+.kepek {
+    float: left;
+    width: 33.3%;
+
+    /*Padding, border és margin méretezése úgy, hogy beleférjen a megadott szélességbe*/
+    box-sizing: border-box;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/*Felé visszük az egeret*/
+a:hover {
+    color:red;
+    text-decoration-color: purple;
+    text-decoration-style: solid;
+    text-decoration: 3px;
+}
+/*Aktív a link*/
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}

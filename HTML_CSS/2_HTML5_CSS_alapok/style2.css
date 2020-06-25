@@ -1,0 +1,49 @@
+h2, p {
+    /*Név, HTML név*/
+    color: purple;
+    /*Betűtípus*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Betűméret*/
+    font-size: 16px;
+    /*Félkövér*/
+    font-weight: 300;
+
+    /*Összesítve: félkövér méret betűcsalád 1,2,3*/
+    font: bold 32px Arial, Helvetica, sans-serif;
+
+    /*Dőlt*/
+    font-style: italic;
+}
+
+.cikk_szoveg {
+    /* HEXADECIMÁLIS*/
+    background-color:#FA8072;
+    
+    /*Szöveg dekoráció és annak módja*/
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+#Sport {
+    /*Háttérkép*/
+    background-image: url("images/varos2.jpg");
+    
+}
+
+ul>a {
+    color: yellow;
+}
+
+li {
+    list-style: url();
+}
+
+nav>li {
+    /*Beállítja, hogy inline vagy block-ként viselkedjen*/
+    display: inline;
+}
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <!-- Az oldallal kapcsolatos információk, hivatkozások-->
+    <meta charset="UTF-8" />
+    <title>Napi hírek</title>
+
+    <!-- Külső CSS 3.prior-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Beágyazott CSS 2.prior -->
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Címsor -->
+    <!-- <header></header>-->
+    <header>
+        <!-- Belső CSS 1.prior -->
+        <h1 style="color:blue;">Napi hírek</h1>
+    </header>
+
+    <!-- Menüsor/Navigáció-->
+    <nav>
+        <ul>
+            <!-- Az <a> tag lehet olyan hivatkozás is ami egy megadott id-jű navhez ugrik 
+                Ezt a hivatkozásnál #idnév-el kell megadni -->
+            <a href="#Sport">
+                <li>Sport</li>
+            </a>
+            <a href="#Bulvár">
+                <li>ulvár</li>
+            </a>
+            <a href="#Politika">
+                <li>Politika</li>
+            </a>
+        </ul>
+    </nav>
+
+    <!-- Sport rovat-->
+    <section id="Sport">
+        <h2>Sport hírek</h2>
+        <article>
+            <h2>Sport 1</h2>
+            <h3><small>Posztolva: 2020. jún. 24.</small></h3>
+
+            <!-- Paragrafus/Stílus -->
+            <p class="cikk_szoveg">
+                <!-- Félkövér -->
+                Lorem <strong>ipsum dolor sit amet, consectetur </strong>adipiscing elit.
+                Praesent et ante non sapien feugiat hendrerit sit amet in ligula.
+                <!-- Dőlt -->
+                Nullam <i>et erat eleifend, congue eros non, </i>faucibus sapien.
+                Praesent sit amet est id mauris mattis varius.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Mauris blandit libero sed odio euismod, at cursus mi finibus.
+                <!-- Felső/Alsó szöveg -->
+                a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+                Mauris dictum consectetur mi, non viverra arcu vulputate eu.
+                In nec turpis luctus lacus interdum porta ac vitae nunc.
+                Maecenas quam orci, vehicula in odio ac, efficitur dignissim mauris.
+                Nam congue lectus ut mauris faucibus, a consequat enim iaculis.<sub>1 lábjegyzet</sub>
+            </p>
+        </article>
+
+        <article>
+            <h2>Sport2</h2>
+            <h3><small>Posztolva: 2020. jún. 24.</small></h3>
+
+            <!-- Paragrafus/Stílus -->
+            <p class="cikk_szoveg">
+                <!-- Félkövér -->
+                Lorem <strong>ipsum dolor sit amet, consectetur </strong>adipiscing elit.
+                Praesent <b>et ante non sapien feugiat</b> hendrerit sit amet in ligula.
+                <!-- Dőlt -->
+                Nullam <i>et erat eleifend, congue eros non, </i>faucibus sapien.
+                Praesent sit amet est id mauris mattis varius.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Mauris blandit libero sed odio euismod, at cursus mi finibus.
+                <!-- Felső/Alsó szöveg -->
+                a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+                Mauris dictum consectetur mi, non viverra arcu vulputate eu.
+                In nec turpis luctus lacus interdum porta ac vitae nunc.
+                Maecenas quam orci, vehicula in odio ac, efficitur dignissim mauris.
+                Nam congue lectus ut mauris faucibus, a consequat enim iaculis.<sub>1 lábjegyzet</sub>
+            </p>
+            <!-- Táblázat -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Név</th>
+                        <th>Hány érmet nyert?</th>
+                        <th>Melyik évben?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sportoló 1</td>
+                        <td>3</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Sportoló 2</td>
+                        <td>2</td>
+                        <td>2012</td>
+                    </tr>
+                    <tr>
+                        <td>Sportoló 3</td>
+                        <td>2</td>
+                        <td>2008</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <!-- Bulvár rovat -->
+    <section id="Bulvár">
+        <h2>Bulvár hírek</h2>
+
+        <article>
+            <h2>Legszebb városok</h2>
+            <h3><small>Posztolva: 2020. jún. 25.</small></h3>
+
+            <!-- Rendezett lista-->
+            <div class="varosok">
+                <img src="images/varos1.jpg" width="200px" height="200px">
+                <p>Város 1</p>
+            </div>
+            <div class="varosok">
+                <img src="images/varos2.jpg" width="200px" height="200px">
+                <p>Város 2</p>
+            </div>
+            <div class="varosok">
+                <img src="images/varos3.jpg" width="200px" height="200px">
+                <p>Város 3</p>
+            </div>
+
+            <div style="clear: both;"></div>
+        </article>
+
+        <article>
+            <h2>Hírességek kedvenc gyümölcsei</h2>
+            <h3><small>Posztolva: 2020. jún. 25.</small></h3>
+
+            <p class="cikk_szoveg">
+                <!-- Félkövér -->
+                Lorem <strong>ipsum dolor sit amet, consectetur </strong>adipiscing elit.
+                Praesent <b>et ante non sapien feugiat</b> hendrerit sit amet in ligula.
+                <!-- Dőlt -->
+                Nullam <i>et erat eleifend, congue eros non, </i>faucibus sapien.
+                Praesent sit amet est id mauris mattis varius.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Mauris blandit libero sed odio euismod, at cursus mi finibus.
+                <!-- Felső/Alsó szöveg -->
+                a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+                Mauris dictum consectetur mi, non viverra arcu vulputate eu.
+                In nec turpis luctus lacus interdum porta ac vitae nunc.
+                Maecenas quam orci, vehicula in odio ac, efficitur dignissim mauris.
+                Nam congue lectus ut mauris faucibus, a consequat enim iaculis.<sub>1 lábjegyzet</sub>
+            </p>
+            <!-- Nem rendezett lista-->
+            <ul>
+                <li>Alma</li>
+                <li>Körte</li>
+                <li>Szilva</li>
+            </ul>
+
+            <!-- Képek -->
+            <div>
+                <div class="kepek">
+                    <img src="images/alma.jpg" width="200px" height="200px">
+                    <p class="cimke">Ez egy alma</p>
+                </div>
+                <div class="kepek">
+                    <img src="images/korte.jpg" width="200px" height="200px">
+                    <p class="cimke">Ez egy körte</p>
+                </div>
+                <div class="kepek">
+                    <img src="images/szilva.jpg" width="200px" height="200px">
+                    <p class="cimke">Ez egy szilva</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <div style="clear: both;"></div>
+    <section id="Politika">
+        <h2>Politika</h2>
+        <article>
+            <h2>Politika 1</h2>
+            <h3>Posztolva: 2020. jún. 26.</h3>
+
+            <p class="cikk_szoveg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent et ante non sapien feugiat hendrerit sit amet in ligula.
+                Nullam et erat eleifend, congue eros non, faucibus sapien.
+                Praesent sit amet est id mauris mattis varius.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Mauris blandit libero sed odio euismod, at cursus mi finibus.
+                Mauris dictum consectetur mi, non viverra arcu vulputate eu.
+                In nec turpis luctus lacus interdum porta ac vitae nunc.
+                Maecenas quam orci, vehicula in odio ac, efficitur dignissim mauris.
+                Nam congue lectus ut mauris faucibus, a consequat enim iaculis.
+            </p>
+
+            <a href="https://www.google.hu/">Ez itt a Google</a>
+        </article>
+
+        <article>
+            <h2>Politika 2-3</h2>
+            <h3>Posztolva: 2020. jún. 26.</h3>
+
+            <p class="cikk_szoveg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent et ante non sapien feugiat hendrerit sit amet in ligula.
+                Nullam et erat eleifend, congue eros non, faucibus sapien.
+                Praesent sit amet est id mauris mattis varius.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Mauris blandit libero sed odio euismod, at cursus mi finibus.
+                Mauris dictum consectetur mi, non viverra arcu vulputate eu.
+                In nec turpis luctus lacus interdum porta ac vitae nunc.
+                Maecenas quam orci, vehicula in odio ac, efficitur dignissim mauris.
+                Nam congue lectus ut mauris faucibus, a consequat enim iaculis.
+            </p>
+
+            <a href="https://www.google.hu/">Ez itt a Google</a>
+        </artcile>
+        <article>
+            <h2>Politika 2-3</h2>
+            <h3>Posztolva: 2020. jún. 26.</h3>
+
+            <p class="cikk_szoveg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent et ante non sapien feugiat hendrerit sit amet in ligula.
+                Nullam et erat eleifend, congue eros non, faucibus sapien.
+                Praesent sit amet est id mauris mattis varius.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Mauris blandit libero sed odio euismod, at cursus mi finibus.
+                Mauris dictum consectetur mi, non viverra arcu vulputate eu.
+                In nec turpis luctus lacus interdum porta ac vitae nunc.
+                Maecenas quam orci, vehicula in odio ac, efficitur dignissim mauris.
+                Nam congue lectus ut mauris faucibus, a consequat enim iaculis.
+            </p>
+
+            <a href="https://www.google.hu/">Ez itt a Google</a>
+        </article>
+    </section>
+
+    
+</body>
+
+</html>
