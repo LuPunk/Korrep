@@ -7,7 +7,7 @@
     <title>Napi hírek</title>
 
     <!-- Külső CSS 3.prior-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylefinal.css">
 
     <!-- Beágyazott CSS 2.prior -->
     <style>
@@ -22,7 +22,7 @@
     <!-- <header></header>-->
     <header>
         <!-- Belső CSS 1.prior -->
-        <h1 style="color:blue;">Napi hírek</h1>
+        <h1 style="color:black;">Napi hírek</h1>
     </header>
 
     <!-- Menüsor/Navigáció-->
@@ -30,15 +30,15 @@
         <ul>
             <!-- Az <a> tag lehet olyan hivatkozás is ami egy megadott id-jű navhez ugrik 
                 Ezt a hivatkozásnál #idnév-el kell megadni -->
-            <a href="#Sport">
-                <li>Sport</li>
-            </a>
-            <a href="#Bulvár">
-                <li>ulvár</li>
-            </a>
-            <a href="#Politika">
-                <li>Politika</li>
-            </a>
+            <li>
+                <a href="#Sport">Sport</a>
+            </li>
+            <li>
+                <a href="#Bulvár">Bulvár</a>
+            </li>
+            <li>
+                <a href="#Politika">Politika</a>
+            </li>
         </ul>
     </nav>
 
@@ -128,17 +128,19 @@
             <h3><small>Posztolva: 2020. jún. 25.</small></h3>
 
             <!-- Rendezett lista-->
-            <div class="varosok">
-                <img src="images/varos1.jpg" width="200px" height="200px">
-                <p>Város 1</p>
-            </div>
-            <div class="varosok">
-                <img src="images/varos2.jpg" width="200px" height="200px">
-                <p>Város 2</p>
-            </div>
-            <div class="varosok">
-                <img src="images/varos3.jpg" width="200px" height="200px">
-                <p>Város 3</p>
+            <div id="varoskepek">
+                <div class="varosok">
+                    <img src="images/varos1.jpg" width="200px" height="200px">
+                    <p>Város 1</p>
+                </div>
+                <div class="varosok">
+                    <img src="images/varos2.jpg" width="200px" height="200px">
+                    <p>Város 2</p>
+                </div>
+                <div class="varosok">
+                    <img src="images/varos3.jpg" width="200px" height="200px">
+                    <p>Város 3</p>
+                </div>
             </div>
 
             <div style="clear: both;"></div>
@@ -164,32 +166,25 @@
                 Maecenas quam orci, vehicula in odio ac, efficitur dignissim mauris.
                 Nam congue lectus ut mauris faucibus, a consequat enim iaculis.<sub>1 lábjegyzet</sub>
             </p>
-            <!-- Nem rendezett lista-->
-            <ul>
-                <li>Alma</li>
-                <li>Körte</li>
-                <li>Szilva</li>
-            </ul>
 
             <!-- Képek -->
-            <div>
-                <div class="kepek">
-                    <img src="images/alma.jpg" width="200px" height="200px">
-                    <p class="cimke">Ez egy alma</p>
-                </div>
-                <div class="kepek">
-                    <img src="images/korte.jpg" width="200px" height="200px">
-                    <p class="cimke">Ez egy körte</p>
-                </div>
-                <div class="kepek">
-                    <img src="images/szilva.jpg" width="200px" height="200px">
-                    <p class="cimke">Ez egy szilva</p>
-                </div>
+            <div class="kepek">
+                <img src="images/alma.jpg" width="200px" height="200px">
+                <p class="cimke">Ez egy alma</p>
             </div>
+            <div class="kepek">
+                <img src="images/korte.jpg" width="200px" height="200px">
+                <p class="cimke">Ez egy körte</p>
+            </div>
+            <div class="kepek">
+                <img src="images/szilva.jpg" width="200px" height="200px">
+                <p class="cimke">Ez egy szilva</p>
+            </div>
+
+            <div style="clear: both;"></div>
         </article>
     </section>
 
-    <div style="clear: both;"></div>
     <section id="Politika">
         <h2>Politika</h2>
         <article>
@@ -209,7 +204,7 @@
                 Nam congue lectus ut mauris faucibus, a consequat enim iaculis.
             </p>
 
-            <a href="https://www.google.hu/">Ez itt a Google</a>
+            <a href="https://www.google.hu/" id="link1">Ez itt a Google</a>
         </article>
 
         <article>
@@ -229,8 +224,8 @@
                 Nam congue lectus ut mauris faucibus, a consequat enim iaculis.
             </p>
 
-            <a href="https://www.google.hu/">Ez itt a Google</a>
-        </artcile>
+            <a href="https://www.google.hu/" id="link2">Ez itt a Google</a>
+        </article>
         <article>
             <h2>Politika 2-3</h2>
             <h3>Posztolva: 2020. jún. 26.</h3>
@@ -248,11 +243,11 @@
                 Nam congue lectus ut mauris faucibus, a consequat enim iaculis.
             </p>
 
-            <a href="https://www.google.hu/">Ez itt a Google</a>
+            <a href="https://www.google.hu/" id="link3">Ez itt a Google</a>
         </article>
     </section>
 
-    
+
 </body>
 
 </html>

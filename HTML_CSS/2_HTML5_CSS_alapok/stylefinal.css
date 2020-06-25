@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    
+    background-color: #3b6978;
+    font-size: 1.2em;
+}
+
+/*Header stílusai*/
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: center;
+
+    background-image: url("images/bg.jpg");
+    
+    margin: 0;
+    padding: 2% 5%;
+}
+
+/*Nav stílusai*/
+nav ul {
+    background-color: rgba(132, 169, 172, 0.7);
+    
+    list-style-type: none;
+
+    font-size: 30px;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul li {
+    display: inline-block;
+
+    width: 33%;
+    box-sizing: border-box;
+
+    padding: 1%;
+}
+
+nav>ul>li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav>ul>li a:hover {
+    color: #204051;
+}
+
+/*Section stílusai*/
+section {
+    background-color: #e7dfd5;
+    
+    margin: 1%;
+    padding: 1%;
+}
+
+section>h2 {
+    font-size: 40px;
+    color: #204051;
+
+    text-align: center;
+}
+
+/*Article stílusai*/
+article {
+    background-color: rgba(132, 169, 172, 0.7);
+    border: 5px solid #204051;
+    border-radius: 45px;
+
+    padding: 1%;
+    margin: 0.5%;
+}
+
+article>h2 {
+    font-size: 1.9em;
+    
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/*Táblázat stílusai*/
+table {
+    text-align: center;
+
+    width: 50%;
+
+    border-collapse: collapse;
+
+    margin: auto;
+    padding: auto;
+}
+
+td, th {
+    border: 1px solid grey;
+    padding: 1%;
+}
+
+th {
+    background-color: #3b6978;
+
+    color: white;
+    font-size: 30px;
+}
+
+td {
+    background-color: #e7dfd5;
+
+    font-weight: bold;
+}
+
+/*Paragrafusok*/
+.cikk_szoveg {
+    text-align: justify;
+}
+
+/*Képek stílusai*/
+/*Megjegyzés: Itt a külső #varoskepek azonosítójú div-ben
+vannak a képet-és aláírást tartalmazó .varosok osztálykijelölt
+div-ek. 
+Először a külső "tároló div-ben beállítottam, hogy a benne lévő
+dolgok középre legyenek igazítva. Ha csak ennyit csináltam volna
+a 3 kép és aláírás középen, egymás alatt lenne. De mivel szeretnénk
+egy sorban látni, így a float-al balra igazította.*/
+
+#varoskepek {
+    text-align: center;
+}
+
+.varosok {
+    float: left;
+    width: 33.3%;
+}
+
+.kepek {
+    border: 5px dashed yellowgreen;
+    border-radius:  45px;
+
+    background-color: white;
+
+    padding:2%;
+    margin: 2%;
+    float: left;
+}
+
+.cimke {
+    text-align: center;
+    font-weight: bolder;
+}
+
+/*Linkek*/
+article>a {
+    color: blue;
+    font-size: 25px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+article>a:hover {
+    color: greenyellow;
+
+    font-size: 40px;
+}
+
+#link1 {
+    position: relative;
+    top: 10px;
+    left: 100px;
+}
+
+#link2 {
+    position: absolute;
+    top: 3300px;
+    left: 500px;
+}
+
+#link3 {
+    position: fixed;
+    bottom: 40px;
+}
+
+
