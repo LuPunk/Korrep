@@ -7,7 +7,7 @@ FROM fajta;
 
 /*Rendezett lekérdezés*/
 /*Order by*/
-/*ABC/Növekvő: ASC (ascending), Visszafele ABC/Csökkenő: DESC (descending)*/
+/*ABC/Növekvő: ASC (ascending) - alapértelemezett, Visszafele ABC/Csökkenő: DESC (descending)*/
 
 SELECT nev, kerulet
 FROM gazda

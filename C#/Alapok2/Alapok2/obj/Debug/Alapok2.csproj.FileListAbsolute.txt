@@ -1,0 +1,7 @@
+D:\!PROJECTS\!Korrep\C#\Alapok2\Alapok2\bin\Debug\Alapok2.exe.config
+D:\!PROJECTS\!Korrep\C#\Alapok2\Alapok2\bin\Debug\Alapok2.exe
+D:\!PROJECTS\!Korrep\C#\Alapok2\Alapok2\bin\Debug\Alapok2.pdb
+D:\!PROJECTS\!Korrep\C#\Alapok2\Alapok2\obj\Debug\Alapok2.csprojAssemblyReference.cache
+D:\!PROJECTS\!Korrep\C#\Alapok2\Alapok2\obj\Debug\Alapok2.csproj.CoreCompileInputs.cache
+D:\!PROJECTS\!Korrep\C#\Alapok2\Alapok2\obj\Debug\Alapok2.exe
+D:\!PROJECTS\!Korrep\C#\Alapok2\Alapok2\obj\Debug\Alapok2.pdb
