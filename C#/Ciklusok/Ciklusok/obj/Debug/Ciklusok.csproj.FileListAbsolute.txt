@@ -1,0 +1,7 @@
+D:\!PROJECTS\!Korrep\C#\Ciklusok\Ciklusok\bin\Debug\Ciklusok.exe.config
+D:\!PROJECTS\!Korrep\C#\Ciklusok\Ciklusok\bin\Debug\Ciklusok.exe
+D:\!PROJECTS\!Korrep\C#\Ciklusok\Ciklusok\bin\Debug\Ciklusok.pdb
+D:\!PROJECTS\!Korrep\C#\Ciklusok\Ciklusok\obj\Debug\Ciklusok.csprojAssemblyReference.cache
+D:\!PROJECTS\!Korrep\C#\Ciklusok\Ciklusok\obj\Debug\Ciklusok.csproj.CoreCompileInputs.cache
+D:\!PROJECTS\!Korrep\C#\Ciklusok\Ciklusok\obj\Debug\Ciklusok.exe
+D:\!PROJECTS\!Korrep\C#\Ciklusok\Ciklusok\obj\Debug\Ciklusok.pdb
