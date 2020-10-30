@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciklusok2", "Ciklusok2\Ciklusok2.csproj", "{741AA8C1-8512-4772-820C-2D79B9086C67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{741AA8C1-8512-4772-820C-2D79B9086C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741AA8C1-8512-4772-820C-2D79B9086C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741AA8C1-8512-4772-820C-2D79B9086C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741AA8C1-8512-4772-820C-2D79B9086C67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3D2E115-F5BA-4ED6-B233-6ACCFC9F08F1}
+	EndGlobalSection
+EndGlobal
