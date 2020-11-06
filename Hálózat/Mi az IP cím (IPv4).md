@@ -69,7 +69,7 @@
   - első két oktett -> 2^14 = 16384 hálózatot jelent
   - utolsó kettő -> 2^16 hálózatonként 65.536 host
   - pl: hálózat.hálózat.host.host
-  - privát/belső tartomány: **172**.16.0.0 – **172**.31.255.255-ig tart
+  - privát/belső tartomány: **172.16**.0.0 – **172.31.**255.255-ig tart
   - alapértelmezett maszk: /16 -> 255.255.0.0
 
   
@@ -138,3 +138,94 @@
 - B(dec): 192.168.13.4
 - A ÉS MASZK: 11000000.10101000.00000000.00000000 -> 192.168.0.0
 - B ÉS MASZK: 11000000.10101000.00000000.00000000 -> 192.168.0.0
+
+
+
+---
+
+# 2. óra: Folytatás
+
+### Speciális IP-címekről (nincsenek kinn a neten)
+
+### 1. Privát IP címek
+
+- ezek nincsnek kinn az interneten, onnan nem látszanak
+- csak belső hálózaton léteznek (LAN-on belül)
+- 2 különböző LAN-ban lehet ugyanazt a címet használni -> 1 LAN-on belül probléma!!!!!!
+- ezeket címeket az osztályok szerint adhatjuk -> privát címtartomány
+- a saját LAN-on belül mi gazdálkodunk velük
+
+
+
+### 2. Szórási (broadcast) cím
+
+- általában a hálózaton kiosztható UTOLSÓ cím szokott lenni (pl. C osztály esetén /24-es maszkkal: 192.168.1.255)
+- amire ha küldenek üzenetet, **a hálózaton belül MINDENKI megkapja**
+- címzett résznél találjuk meg -> mindenkit egyszerre megcímzünk
+
+
+
+### 3. Visszacsatolási (loopback cím)
+
+- **127.0.0.1**
+- Olyan cím, amely mindig saját magadra mutat
+- Mikor van értelme? 
+  - A saját gépünkön fut vmi szolgáltatás (pl webszerver, levelezőszerver) és ezt hálózat nélkül el szeretnénk érni
+  - Példa: MySQL Workbench-hez a MySQL szervert itt érem el
+
+
+
+### 4. APIPA címek
+
+- **Automatic Private IP Addressing** - Automatikus Privát IP címzés
+
+- egy szolgáltatás amely azon alapszik, hogy az eszközök "megbeszélik" egymás között, hogy kinek, mi legyen a címe
+- Mikor? 
+  - Ha nem rendelkezünk statikus (kézzel beállított) IP címmel
+  - Illetve nincs/van érjük el a DHCP szervert
+- Kiosztják a gépek egymás között
+- Ezek a címek a **169.254.x.x** 
+
+---
+
+
+
+## Hogyan osszuk fel a hálózatot? Hogyan tervezzünk? Mennyi gép (host) fér el egy címtartományban?
+
+### 1. A saját belső hálózatunkon mi vagyunk az Úr!!!!
+
+- Mi tervezzük meg, hogy kinek, milyen címet adunk (lehet statikus vagy dinamikus cím)
+- Mi tervezzük meg hogy milyen logikai felépítése legyen a hálózatunknak (részekre osztás -> alhálózat)
+
+### 1.1 Alhálózatok
+
+- a mi mozgásterünkben részekre tudjuk osztani a rendelkezésre álló címtartományt
+- halmaz -> részhalmaz kapcsolat
+- érdemes részekre bontani ha szükséges
+- nincs rá szabály/szabvány, minden rajtunk múlik
+- ezek az alhálózatok úgy tűnnek, mintha különböző LAN-ok lennének és nem feltétlenül érik el egymást
+- mi ennek az előnye?
+  - Átláthatóbb: "ránézésre" meg tudom mondani hova tartozik a cím 
+  - Jogosultságokat könnyebb kiosztani -> 1 alhálózathoz 1 fajta jogosultság, nem mindenkinek uaz.
+  - Tűzfal szabályokat lehet könnyebben állítani 
+  - Láthatóságot tudjuk szabályozni
+
+
+
+### 2. Hogyan tervezzünk?
+
+- törekedni kell az átláthatóságra
+
+- figyelembe kell venni, hogy mekkora az eszközpark (hány eszköz van a hálózaton)
+- ennek fényében választunk IP cím tartományt (A-B-C privát címei)
+- végig gondoljuk, hogy milyen részei vannak a hálózatnak (érdemes-e alhálózatokat csinálni?)
+- végig gondoljuk, hogy milyen szolgáltatások vannak, kinek mit kell elérni 
+- bele kell gondolni abba, hogyan fogod karbantartani -> logikus tervezést igényel
+- abba is bele kell gondolni, hogy ha másik rendszergazda van/lesz
+
+
+
+
+
+
+
